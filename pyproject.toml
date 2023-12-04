@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "git_repo_sizer"
+version = "0.1"
+authors = [
+    { name = "Esteban Eliza" },
+]
+description = "Git repo pack sizer command line tool."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+
+[project.urls]
+"Homepage" = "https://github.com/estebaneliza/git-repo-sizer"
+"Bug Tracker" = "https://github.com/estebaneliza/git-repo-sizer/issues"
+"Repository" = "https://github.com/estebaneliza/git-repo-sizer"
+
+[project.scripts]
+git-repo-sizer = "app.main:main"
